@@ -11,7 +11,7 @@ const MenuOverlay = ({ links }) => {
   };
 
   return (
-    <ul className="flex flex-col py-4 items-center">
+    <ul className="flex flex-col py-4 items-center justify">
       {links.map((link, index) => (
         <li key={index} className="w-2/4 justify-center align-middle flex-1 text-center mb-2">
           {link.path === "" ? (
