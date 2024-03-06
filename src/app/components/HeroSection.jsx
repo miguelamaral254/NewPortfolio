@@ -96,7 +96,7 @@ const HeroSection = () => {
             <Image
               src="/images/minha-foto.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/4 -translate-y-1/2 top-44 left-1/3"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
             />
