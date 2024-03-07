@@ -113,11 +113,17 @@ const TAB_DATA = [
           Frontend Developer <br />
           Aplantica pizzeria
         </li>
-        <li>
+        <hr width="30%" />
+        <li className="pt-1">
+          Telemarket operator <br />
+          Netmake Solutions for internet
+        </li>
+        <hr width="40%" />
+        <li className="pt-1">
           IT Support Analyst <br />
           Netmake Solutions for internet
         </li>
-        <hr width="60%" />
+        <hr width="40%" />
       </ul>
     ),
   },
@@ -168,7 +174,7 @@ const AboutSection = () => {
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
+              EEducation{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("experience")}
