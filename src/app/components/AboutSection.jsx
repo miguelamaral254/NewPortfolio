@@ -1,6 +1,5 @@
 "use client";
 import React, { useTransition, useState } from "react";
-import Image from "next/image";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
@@ -105,6 +104,23 @@ const TAB_DATA = [
       </ul>
     ),
   },
+  {
+    title: "Experience",
+    id: "experience",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>
+          Frontend Developer <br />
+          Aplantica pizzeria
+        </li>
+        <li>
+          IT Support Analyst <br />
+          Netmake Solutions for internet
+        </li>
+        <hr width="60%" />
+      </ul>
+    ),
+  },
 ];
 
 const AboutSection = () => {
@@ -152,7 +168,14 @@ const AboutSection = () => {
               active={tab === "education"}
             >
               {" "}
-              education{" "}
+              Education{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
+            >
+              {" "}
+              Experience{" "}
             </TabButton>
           </div>
           <div className="mt-8">
