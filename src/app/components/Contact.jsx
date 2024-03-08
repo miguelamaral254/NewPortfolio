@@ -8,7 +8,7 @@ import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const [showMessage, setShowMessage] = useState(false);
-  const [formState, handleSubmit] = useForm("mnqyyylv");
+  const [formState, handleSubmit] = useForm("mgegzara");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -16,7 +16,7 @@ const Contact = () => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
-    if (formState.errors.length === 0) {
+    if (formState.errors === null) {
       try {
         await handleSubmit(event);
 
@@ -25,7 +25,6 @@ const Contact = () => {
           setTimeout(() => {
             setShowMessage(false);
           }, 6000);
-
           // Limpar os campos
           setEmail("");
           setName("");
@@ -57,13 +56,13 @@ const Contact = () => {
                 </h2>
                 <div
                   className="
-                flex
-                text-[20px]
-                gap-x-6
-                max-w-max
-                mx-auto
-                lg:mx-0
-                "
+                  flex
+                  text-[20px]
+                  gap-x-6
+                  max-w-max
+                  mx-auto
+                  lg:mx-0
+                  "
                 >
                   <a
                     href="https://wa.me/5581996379353"
@@ -91,13 +90,14 @@ const Contact = () => {
             </div>
             {/* Form */}
             <motion.form
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
               onSubmit={handleFormSubmit}
               className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
             >
-              {showMessage && <div className=" text-gradient mb-6"></div>}
+              {showMessage && (
+                <div className=" text-primary-500 mb-6">
+                  <span>Thanks for message! I'll be in touch soon</span>
+                </div>
+              )}
               <input
                 className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-cyan-500 transition-all"
                 name="email"
