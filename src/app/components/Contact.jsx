@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="px-20 py-5" id="contact">
+    <section className="py-5 min-w-96" id="contact">
       <div className="flex-1">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -59,6 +59,7 @@ const Contact = () => {
                   flex
                   text-[20px]
                   gap-x-6
+                  py-5
                   max-w-max
                   mx-auto
                   lg:mx-0
@@ -91,7 +92,7 @@ const Contact = () => {
             {/* Form */}
             <motion.form
               onSubmit={handleFormSubmit}
-              className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+              className="flex-1 border rounded-2xl flex-col gap-y-6 pb-24 p-6 items-start"
             >
               {showMessage && (
                 <div className=" text-primary-500 mb-6">
