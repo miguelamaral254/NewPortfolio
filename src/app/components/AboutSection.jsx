@@ -50,8 +50,8 @@ const TAB_DATA = [
           <li className="pt-2">REST</li>
           <li>SOAP</li>
           <li>JSON Services</li>
-          <li>Python</li>
-          <li>PHP</li>
+          <li>XML</li>
+          <li>AWS</li>
         </ul>
 
         <ul className="list-disc pl-2">
