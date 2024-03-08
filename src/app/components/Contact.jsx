@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16" id="contact">
+    <section className="px-20 py-5" id="contact">
       <div className="flex-1">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}

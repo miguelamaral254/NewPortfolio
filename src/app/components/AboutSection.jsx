@@ -174,7 +174,7 @@ const AboutSection = () => {
               active={tab === "education"}
             >
               {" "}
-              EEducation{" "}
+              Education{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("experience")}
