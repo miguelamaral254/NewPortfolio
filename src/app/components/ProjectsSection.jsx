@@ -5,6 +5,16 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
+  
+  {
+    id: 0,
+    title:"Senac Store",
+    description: "A cloath store for geekis from senac collage",
+    image:"/images/projects/0.png",
+    tag:["All","web"],
+    gitUrl:"https://github.com/miguelamaral254/ecommerceprojclt",
+    previewUrl:"https://senacstoreproj.vercel.app/",
+  },
   {
     id: 1,
     title: "Hyphen",

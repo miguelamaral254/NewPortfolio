@@ -116,7 +116,7 @@ const TAB_DATA = [
         <hr width="30%" />
         <li className="pt-1">
           Telemarket operator <br />
-          Netmake Solutions for internet
+          Datametrica
         </li>
         <hr width="40%" />
         <li className="pt-1">
