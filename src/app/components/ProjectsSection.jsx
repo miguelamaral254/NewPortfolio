@@ -22,7 +22,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/miguelamaral254/hyphenapp",
-    previewUrl: "https://github.com/miguelamaral254/hyphenapp",
+    previewUrl: "https://www.figma.com/proto/7NGYbbYRxAvhuEkrhtJlmk/Untitled?page-id=0%3A1&node-id=12-401&viewport=429%2C500%2C0.04&t=4jqO1Z95tlHJG5mG-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=12%3A79&show-proto-sidebar=1",
   },
   {
     id: 2,
