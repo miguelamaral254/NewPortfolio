@@ -21,8 +21,8 @@ const projectsData = [
     description: "A personal project with react native with the aim of boosting experience for new developers and also assisting in the search for both employees and employers for projects/jobs",
     image: "/images/projects/1.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/miguelamaral254/hyphenapp",
+    previewUrl: "https://github.com/miguelamaral254/hyphenapp",
   },
   {
     id: 2,
