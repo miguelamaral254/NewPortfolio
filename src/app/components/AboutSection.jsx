@@ -38,6 +38,7 @@ const TAB_DATA = [
           <span>Languages</span>
           <hr width="100%" />
           <li className="pt-2">Javascript</li>
+          <li>Typescript</li>
           <li>Java</li>
           <li>C, C++ and C#</li>
           <li>Python</li>
@@ -115,13 +116,13 @@ const TAB_DATA = [
         </li>
         <hr width="30%" />
         <li className="pt-1">
-          Telemarket operator <br />
-          Datametrica
+          Frontend Developer <br />
+          SERPRO
         </li>
         <hr width="40%" />
         <li className="pt-1">
           IT Support Analyst <br />
-          Netmake Solutions for internet
+          Scriptcase
         </li>
         <hr width="40%" />
       </ul>

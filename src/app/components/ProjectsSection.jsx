@@ -5,61 +5,41 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
-  
   {
     id: 0,
-    title:"Senac Store",
-    description: "A cloath store for geekis from senac collage",
+    title:"Mascate booker",
+    description: "A reservation tool booking for the Mascate restaurant",
     image:"/images/projects/0.png",
+    tag:["All","web"],
+    gitUrl:"https://github.com/miguelamaral254/projeto-mascate",
+    previewUrl:"https://projeto-mascate.vercel.app/",
+  },
+  {
+    id: 1,
+    title:"Senac Store",
+    description: "A cloath store for geekies from senac collage",
+    image:"/images/projects/1.png",
     tag:["All","web"],
     gitUrl:"https://github.com/miguelamaral254/ecommerceprojclt",
     previewUrl:"https://senacstoreproj.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Hyphen",
-    description: "A personal project with react native with the aim of boosting experience for new developers and also assisting in the search for both employees and employers for projects/jobs",
-    image: "/images/projects/1.png",
+    description: "This project have the aim of boosting experience for new developers and also assisting in the search for both employees and employers for projects/jobs",
+    image: "/images/projects/2.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/miguelamaral254/hyphenapp",
     previewUrl: "https://www.figma.com/proto/7NGYbbYRxAvhuEkrhtJlmk/Untitled?page-id=0%3A1&node-id=12-401&viewport=429%2C500%2C0.04&t=4jqO1Z95tlHJG5mG-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=12%3A79&show-proto-sidebar=1",
   },
   {
-    id: 2,
+    id: 3,
     title: "Project mannagement",
     description: "The purpose of this project is to manage the project, adding tasks and allocating resources",
-    image: "/images/projects/2.png",
+    image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/miguelamaral254/VersionamentoProjetoss",
     previewUrl: "https://projetocosts.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Super market system",
-    description: "The aim of this project is to simulate how the surface part of a grocery store could work, being able to add items to the cart and even apply discounts.",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/miguelamaral254/supermarketsystem",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Parking system",
-    description: "Application related to the DIO bootcamp track. It is a system for a parking lot, which will be used to manage parked vehicles and carry out operations, such as adding a vehicle, removing a vehicle (and displaying the amount charged during the period) and listing the vehicles.",
-    image: "/images/projects/4.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/miguelamaral254/trilha-net-fundamentos-desafio",
-    previewUrl: "/",
-  },
-  
-  {
-    id: 5,
-    title: "Evo gym",
-    description: "I was able to learn so much reproducing this website. A training program website.",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
   },
   
 ];
