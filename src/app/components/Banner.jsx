@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
@@ -75,7 +75,7 @@ const HeroSection = () => {
               target="_blank"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
-              <span className="block flex gap-2 text-center justify-center items-center bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="block gap-2 text-center justify-center items-center bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
                 <FaFileDownload />
               </span>
