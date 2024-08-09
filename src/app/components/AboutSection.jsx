@@ -11,64 +11,40 @@ const TAB_DATA = [
         <ul className="list-disc pl-2">
           <span>Frameworks</span>
           <hr width="100%" />
-          <li className="pt-2">React</li>
           <li>Angular</li>
           <li>Next JS</li>
-          <li>.Net</li>
-          <li>AspNet</li>
           <li>Springboot</li>
-          <li>Tailwind</li>
         </ul>
         <ul className="list-disc pl-2">
-          <span>Mobile</span>
+          <span>Operational Systems</span>
           <hr width="100%" />
-          <li className="pt-2">React native</li>
-          <li>IONIC</li>
-          <li>Kotlin</li>
-          <ul className="list-disc pt-1">
-            <span>Operational Systems</span>
-            <hr width="100%" />
-            <li className="pt-2">Windows</li>
-            <li>MacOS X</li>
-            <li>Linux</li>
-          </ul>
+          <li>Windows</li>
+          <li>MacOS X</li>
+          <li>Linux</li>
         </ul>
 
         <ul className="list-disc pl-2">
-          <span>Languages</span>
+          <span>Programming languages</span>
           <hr width="100%" />
-          <li className="pt-2">Javascript</li>
           <li>Typescript</li>
           <li>Java</li>
-          <li>C, C++ and C#</li>
+          <li>C#</li>
           <li>Python</li>
           <li>PHP</li>
         </ul>
 
         <ul className="list-disc pl-2">
-          <span>Web Services</span>
-          <hr width="100%" />
-          <li className="pt-2">REST</li>
-          <li>SOAP</li>
-          <li>JSON Services</li>
-          <li>XML</li>
-          <li>AWS</li>
-        </ul>
-
-        <ul className="list-disc pl-2">
           <span>Data Base</span>
           <hr width="100%" />
-          <li className="pt-2">Mysql</li>
-          <li>Postgree SQL</li>
-          <li>Firebird</li>
-          <li>Db2</li>
+          <li>Mysql</li>
+          <li>PostgreSQL</li>
+          <li>Ms SQL server</li>
         </ul>
         <ul className="list-disc pl-2">
           <span>Agile methodologies</span>
           <hr width="100%" />
           <li className="pt-2">Scrum</li>
           <li>Kanbam</li>
-          <li>XP</li>
         </ul>
       </div>
     ),
@@ -79,6 +55,7 @@ const TAB_DATA = [
     content: (
       <div className="flex flex-wrap gap-5 ">
         <ul className="list-disc pl-2">
+          <hr width="100%" />
           <li className="pt-2">Clear and effective communication</li>
           <li>problem solving</li>
           <li>humanized customer service</li>
@@ -146,12 +123,15 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Since I started my journey as a freelance Frontend 2 years ago, I
-            have done remotely work for a few companies and eventually I became
-            a Fullstack developer. Currently I continue working as a freelance
-            developer and also work as technical support. I am the type of
-            professional who is confident, naturally curious and continually
-            works towards improve my skills.
+            My name is Miguel Augusto Sales do Amaral, Fullstack developer with
+            a strong focus on building APIs using mainly technologies such as
+            Java and Spring Boot. He is also proficient in more modern
+            technologies such as Next.js and TypeScript. I have experience in
+            creating complete and scalable solutions, using architectures such
+            as clean architecture and applying good development practices to
+            ensure efficiency and quality. I am always looking for new
+            challenges to expand my skills and contribute to innovative
+            projects.
           </p>
         </div>
         <div>

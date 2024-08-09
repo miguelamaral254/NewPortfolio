@@ -100,7 +100,7 @@ const Contact = () => {
                 </div>
               )}
               <input
-                className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-cyan-500 transition-all"
+                className="bg-transparent border-b py-5 outline-none w-full placeholder:text-white focus:border-cyan-500 transition-all"
                 name="email"
                 id="email"
                 type="email"
@@ -116,7 +116,7 @@ const Contact = () => {
                 errors={formState.errors}
               />
               <input
-                className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white  focus:border-cyan-500 transition-all"
+                className="bg-transparent border-b pt-12 pb-5 outline-none w-full placeholder:text-white  focus:border-cyan-500 transition-all"
                 id="name"
                 type="text"
                 name="name"
