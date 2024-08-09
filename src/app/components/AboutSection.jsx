@@ -140,6 +140,7 @@ const AboutSection = () => {
             ensure efficiency and quality. I am always looking for new
             challenges to expand my skills and contribute to innovative
             projects.
+            .
           </p>
         </div>
         <div>
