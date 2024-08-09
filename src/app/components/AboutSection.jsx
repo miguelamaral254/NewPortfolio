@@ -91,11 +91,19 @@ const TAB_DATA = [
           Frontend Developer <br />
           Aplantica pizzeria
         </li>
-        <hr width="30%" />
+
+        <hr width="40%" />
+        <li>
+          Fullstack developer <br />
+          Mascate Scheadule system
+        </li>
+
+        <hr width="40%" />
         <li className="pt-1">
           Frontend Developer <br />
           SERPRO
         </li>
+
         <hr width="40%" />
         <li className="pt-1">
           IT Support Analyst <br />
