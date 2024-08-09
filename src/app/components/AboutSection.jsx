@@ -133,7 +133,7 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             My name is Miguel Augusto Sales do Amaral, Fullstack developer with
             a strong focus on building APIs using mainly technologies such as
-            Java and Spring Boot. He is also proficient in more modern
+            Java and Spring Boot. I'm also proficient in the most modern
             technologies such as Next.js and TypeScript. I have experience in
             creating complete and scalable solutions, using architectures such
             as clean architecture and applying good development practices to
