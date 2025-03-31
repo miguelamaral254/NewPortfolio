@@ -1,48 +1,144 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
+import {
+  FaCode,
+  FaBrain,
+  FaGraduationCap,
+  FaBriefcase,
+  FaAngular,
+  FaJava,
+  FaPhp,
+  FaWindows,
+  FaApple,
+  FaLinux,
+  FaDatabase,
+  FaTools,
+  FaProjectDiagram,
+  FaCloud,
+  FaBug,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiSpring,
+  SiTypescript,
+  SiJavascript,
+  SiPostgresql,
+  SiMysql,
+  SiMicrosoftsqlserver,
+  SiNodedotjs,
+  SiMongodb,
+  SiDocker,
+  SiAmazonaws,
+  SiAzuredevops,
+  SiJenkins,
+  SiSelenium,
+  SiJunit5,
+} from "react-icons/si";
 
 const TAB_DATA = [
   {
     title: "Hard Skills",
     id: "hardSkills",
     content: (
-      <div className="flex flex-wrap gap-5 ">
+      <div className="flex flex-wrap gap-5 text-white">
         <ul className="list-disc pl-2">
-          <span>Frameworks</span>
+          <span className="flex items-center gap-1">
+            <FaCode /> Frameworks
+          </span>
           <hr width="100%" />
-          <li>Angular</li>
-          <li>Next.js</li>
-          <li>Spring Boot</li>
+          <li className="flex items-center gap-1">
+            <SiSpring /> Spring Boot
+          </li>
+          <li className="flex items-center gap-1">
+            <SiNodedotjs /> Node
+          </li>
+          <li className="flex items-center gap-1">
+            <FaAngular /> Angular
+          </li>
+          <li className="flex items-center gap-1">
+            <SiNextdotjs /> Next.js
+          </li>
         </ul>
         <ul className="list-disc pl-2">
-          <span>Operational Systems</span>
+          <span className="flex items-center gap-1">
+            <FaCode /> Programming Languages
+          </span>
           <hr width="100%" />
-          <li>Windows</li>
-          <li>MacOS X</li>
-          <li>Linux</li>
+          <li className="flex items-center gap-1">
+            <FaJava /> Java
+          </li>
+          <li className="flex items-center gap-1">
+            <SiTypescript /> TypeScript
+          </li>
+          <li className="flex items-center gap-1">
+            <SiJavascript /> JavaScript
+          </li>
+          <li className="flex items-center gap-1">
+            <FaPhp /> PHP
+          </li>
         </ul>
         <ul className="list-disc pl-2">
-          <span>Programming Languages</span>
+          <span className="flex items-center gap-1">
+            <FaTools /> Tests/Automation
+          </span>
           <hr width="100%" />
-          <li>TypeScript</li>
-          <li>Java</li>
-          <li>C#</li>
-          <li>Python</li>
-          <li>PHP</li>
+          <li className="flex items-center gap-1">
+            <SiJunit5 /> JUnit
+          </li>
+          <li className="flex items-center gap-1">
+            <SiSelenium /> Selenium
+          </li>
+          <li className="flex items-center gap-1">
+            <FaBug /> T.D.D.
+          </li>
+        </ul>
+
+        <ul className="list-disc pl-2">
+          <span className="flex items-center gap-1">
+            <FaDatabase /> Databases
+          </span>
+          <hr width="100%" />
+          <li className="flex items-center gap-1">
+            <SiMysql /> MySQL
+          </li>
+          <li className="flex items-center gap-1">
+            <SiPostgresql /> PostgreSQL
+          </li>
+          <li className="flex items-center gap-1">
+            <SiMicrosoftsqlserver /> MS SQL Server
+          </li>
+          <li className="flex items-center gap-1">
+            <SiMongodb /> Mongo DB
+          </li>
         </ul>
         <ul className="list-disc pl-2">
-          <span>Databases</span>
-          <hr width="100%" />
-          <li>MySQL</li>
-          <li>PostgreSQL</li>
-          <li>MS SQL Server</li>
-        </ul>
-        <ul className="list-disc pl-2">
-          <span>Agile Methodologies</span>
+          <span className="flex items-center gap-1">
+            <FaProjectDiagram /> Agile Methodologies
+          </span>
           <hr width="100%" />
           <li className="pt-2">Scrum</li>
           <li>Kanban</li>
+          <li>Extreme Programming (XP)</li>
+        </ul>
+        <ul className="list-disc pl-2">
+          <span className="flex items-center gap-1">
+            <FaCloud /> DevOps
+          </span>
+          <hr width="100%" />
+          <li className="flex items-center gap-1">
+            <SiDocker /> Docker
+          </li>
+          <li className="flex items-center gap-1">
+            <SiAmazonaws /> AWS
+          </li>
+          <li className="flex items-center gap-1">
+            <SiAzuredevops /> Azure
+          </li>
+          <li className="flex items-center gap-1">
+            <SiJenkins /> Jenkins
+          </li>
         </ul>
       </div>
     ),
@@ -51,17 +147,21 @@ const TAB_DATA = [
     title: "Soft Skills",
     id: "softSkills",
     content: (
-      <div className="flex flex-wrap gap-5 ">
+      <div className="flex flex-wrap gap-5 text-white">
         <ul className="list-disc pl-2">
+          <span className="flex items-center gap-1">
+            <FaBrain /> Skills
+          </span>
           <hr width="100%" />
           <li className="pt-2">Clear and effective communication</li>
+          <li>Good programming practices(Clean code)</li>
           <li>Problem-solving</li>
+          <li>Fast Learning</li>
           <li>Humanized customer service</li>
           <li>Self-management</li>
           <li>Ease of working in a team and dividing tasks</li>
           <li>Emotional intelligence</li>
           <li>Focus on delivering results</li>
-          <hr width="100%" />
         </ul>
       </div>
     ),
@@ -70,12 +170,15 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>
+      <ul className="list-disc pl-2 text-white">
+        <span className="flex items-center gap-1">
+          <FaGraduationCap /> Academic Background
+        </span>
+        <hr width="60%" />
+        <li className="pt-2">
           Analysis and Systems Development <br />
           Senac College, Recife-PE
         </li>
-        <hr width="60%" />
       </ul>
     ),
   },
@@ -83,27 +186,43 @@ const TAB_DATA = [
     title: "Experience",
     id: "experience",
     content: (
-      <ul className="list-disc pl-2">
-        <li>
-          Frontend Developer <br />
-          Aplantica Pizzeria
+      <ul className="list-disc pl-2 text-white">
+        <span className="flex items-center gap-1">
+          <FaBriefcase /> Professional Journey
+        </span>
+        <hr width="40%" />
+        <li className="pt-2">
+          Backend Developer <br />
+         -  HubI - i.de.i.a.S Incubator, Recife <br />
+          • Technologies used: Java (Spring Boot), Next.js (TypeScript), PostgreSQL, Docker, Ubuntu Server, Apache. <br />
+
+
         </li>
         <hr width="40%" />
-        <li>
-          Fullstack Developer <br />
-          Mascate Schedule System
-        </li>
+        <li className="pt-5">
+        Fullstack Developer <br />
+          - Senac/Fecomércio-PE, Recife       <br/>
+          • Technologies used: Node.js (TypeScript), PostgreSQL, Docker.
+          
+ </li>
         <hr width="40%" />
-        <li className="pt-1">
-          Frontend Developer <br />
-          SERPRO
-        </li>
-        <hr width="40%" />
-        <li className="pt-1">
-          IT Support Analyst <br />
-          Scriptcase
-        </li>
-        <hr width="40%" />
+        <li className="pt-5">
+           Junior System Analyst <br />
+          - ScriptCase (RAD), Remote <br/>
+          • Technologies used:PHP,Scriptcase,Linux, Macos, Windows, automated tests, PostgreSQL, Docker.
+
+        </li>        
+        <hr width="90%" />
+
+        <li className="pt-5">
+           Junior Backend Developer <br />
+          - SirProject, Remote <br/>
+          • Technologies used: Java (Spring Boot), Extreme Programming(XP), T.D.D, Junit, Mockito, PostgreSQL, Docker, Ubuntu Server, Apache. <br />
+        </li>        
+        <hr width="90%" />
+
+       
+        
       </ul>
     ),
   },
@@ -125,14 +244,15 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            My name is Miguel Amaral, a Fullstack developer with
-            a strong focus on building APIs using technologies such as Java and
-            Spring Boot. I&apos;m also proficient in modern technologies like
-            Next.js and TypeScript. I have experience in creating complete and scalable
-            solutions, using architectures such as clean architecture and applying
-            good development practices to ensure efficiency and quality. I am always
-            looking for new challenges to expand my skills and contribute to innovative
-            projects.
+            My name is Miguel Amaral and I'm Professional with experience in
+            backend development, focusing on building scalable APIs and
+            organized architectures, following SOLID principles and best
+            development practices. Skilled in Java (Spring Boot) and Node.js
+            (TypeScript), with experience in Docker, CI/CD (Jenkins, GitHub
+            Actions), automated testing (JUnit, Mockito, TDD). Works with
+            relational and non-relational databases (MySQL, PostgreSQL, MongoDB,
+            MS SQL Server), ensuring efficiency and performance. Always seeking
+            continuous learning and technical improvement.
           </p>
         </div>
         <div>
@@ -142,6 +262,12 @@ const AboutSection = () => {
               active={tab === "hardSkills"}
             >
               Hard Skills
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
+            >
+              Experience
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("softSkills")}
@@ -155,12 +281,7 @@ const AboutSection = () => {
             >
               Education
             </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("experience")}
-              active={tab === "experience"}
-            >
-              Experience
-            </TabButton>
+          
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab)?.content}

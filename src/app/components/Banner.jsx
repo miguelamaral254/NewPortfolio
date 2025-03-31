@@ -10,6 +10,7 @@ import {
   FaLinkedin,
   FaFileDownload,
 } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 
 const HeroSection = () => {
   return (
@@ -21,7 +22,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 ">
               Hello, I&apos;m{" "}
             </span>
@@ -64,18 +65,21 @@ const HeroSection = () => {
             </Link>
           </div>
           <div>
-            <Link
-              href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white  btn ;"
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="px-6 py-4 inline-block w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white btn"
             >
               Contact Me
-            </Link>
+            </ScrollLink>
             <Link
-              href="https://drive.google.com/file/d/1qlx_6tChGC4is4mISun_lkHfamAjnWvH/view?usp=sharing"
+              href="https://drive.google.com/file/d/1cdU89cKunOq32QYFxdNF4VTEDBgBjKH-/view?usp=sharing"
               target="_blank"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
-              <span className="block gap-2 text-center justify-center items-center bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="flex px-6 justify-center align-middle items-center gap-3 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white btn">
                 Download CV
                 <FaFileDownload />
               </span>
@@ -88,13 +92,15 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full overflow-hidden bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div
+            className="rounded-full overflow-hidden bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]"
+          >
             <Image
               src="/images/minha-foto.png"
-              alt="miguel image"
-              className="w-full mt-10 h-full"
-              width={300}
-              height={300}
+              alt="Miguel Amaral"
+              className="object-cover w-full h-full"
+              width={400}
+              height={400}
             />
           </div>
         </motion.div>

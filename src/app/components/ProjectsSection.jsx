@@ -5,42 +5,59 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
+
   {
-    id: 0,
+    id: 2,
+    title:"HubI - Inovation Hub",
+    description: "A platform connecting students, teachers, entrepreneurs, and companies to turn ideas into real solutions, boosting academic projects, startups, and initiatives.",
+    stack:"- Technologies used: Java, Springboot, JWT,TypeScript, Next.js, Axios.",
+    image:"/images/projects/hubi.png",
+    tag: ["All", "Web"],
+    gitUrl:"https://github.com/miguelamaral254/site-hub-inovacao",
+    previewUrl:"https://github.com/miguelamaral254/site-hub-inovacao",
+  },
+  {
+    id: 3,
+    title:"Agenda NRF Retails 2025",
+    description: "A Web agenda developed for the management and monitoring of the NRF 2025 Mission, organized by Fecomércio-PE, in partnership with Sebrae and Senac-PE. This application allows participants to access detailed information about the NRF Retail's Big Show 2025 event in New York, offering an intuitive and visually appealing experience.",
+    image:"/images/projects/retails.jpeg",
+    stack:"- Technologies used: Typescript, Node.js, Express, JWT, Next.js, React Native, EXPO, Axios.",
+    tag: ["All", "Mobile", "Web"],
+    gitUrl:"https://github.com/GuusRodrigues/SenacEventos",
+    previewUrl:"https://github.com/GuusRodrigues/SenacEventos",
+  },
+  {
+    id: 4,
+    title:"Mediotec+",
+    description: "Mediotech+ is a web system developed for coordinators, teachers and students of the Mediotec school, which aims to facilitate the organization and monitoring of classes, subjects, students and grades. This repository corresponds to the project's Frontend.",
+    image:"/images/projects/mediotec.png",
+    stack:"- Technologies used: Java, Springboot, JWT, Next.js,React Native, EXPO, Typescript, Axios",
+    tag: ["All", "Mobile", "Web"],
+    gitUrl:"https://github.com/miguelamaral254/mediotec-frontend",
+    previewUrl:"https://github.com/miguelamaral254/mediotec-frontend",
+  },
+  {
+    id: 5,
     title:"Mascate booker",
     description: "A reservation tool booking for the Mascate restaurant",
+    stack:"- Technologies used: Java, Springboot, JWT, TypeScript, Next.js, Axios.",
     image:"/images/projects/0.png",
     tag: ["All", "Web"],
     gitUrl:"https://github.com/miguelamaral254/projeto-mascate",
     previewUrl:"https://projeto-mascate.vercel.app/",
   },
   {
-    id: 1,
+    id: 6,
     title:"Senac Store",
     description: "A cloath store for geekies from senac collage",
+    stack:"- Technologies used: TypeScript, Next.js, Prisma.",
     image:"/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl:"https://github.com/miguelamaral254/ecommerceprojclt",
     previewUrl:"https://senacstoreproj.vercel.app/",
   },
-  {
-    id: 2,
-    title: "Hyphen",
-    description: "This project have the aim of boosting experience for new developers and also assisting in the search for both employees and employers for projects/jobs",
-    image: "/images/projects/2.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/miguelamaral254/hyphenapp",
-    previewUrl: "https://www.figma.com/proto/7NGYbbYRxAvhuEkrhtJlmk/Untitled?page-id=0%3A1&node-id=12-401&viewport=429%2C500%2C0.04&t=4jqO1Z95tlHJG5mG-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=12%3A79&show-proto-sidebar=1",
-  },
-  {
-    id: 3,
-    title: "Project mannagement",
-    description: "The purpose of this project is to manage the project, adding tasks and allocating resources",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/miguelamaral254/VersionamentoProjetoss",
-    previewUrl: "https://projetocosts.vercel.app/",
-  },
+  
+ 
   
 ];
 
@@ -100,6 +117,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              stack={project.stack}
             />
           </motion.li>
         ))}
